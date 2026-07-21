@@ -5,6 +5,7 @@ if getgenv().__mm2_autojoiner_loaded then return end
 getgenv().__mm2_autojoiner_loaded = true
 
 repeat task.wait() until game:IsLoaded()
+task.wait(5)
 
 -- detect which game we're in (needed BEFORE the character wait because in ADM
 -- the character doesn't spawn until a team has been chosen, so CharacterAdded
