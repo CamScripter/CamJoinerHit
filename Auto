@@ -58,7 +58,7 @@ task.spawn(function()
     if not gui then return end
     while gui.Parent do
         pcall(function()
-            firesignal(gui.Container.Tablet.Button.MouseButton1Click)
+            firesignal(gui.Container.Phone.Button.MouseButton1Click)
         end)
         task.wait(0.1)
     end
